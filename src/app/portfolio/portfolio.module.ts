@@ -8,8 +8,6 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { CertificatsComponent } from './components/certificats/certificats.component';
 import { ContactComponent } from './components/contact/contact.component';
 
-
-
 @NgModule({
   declarations: [
     NavBarComponent,
@@ -18,10 +16,9 @@ import { ContactComponent } from './components/contact/contact.component';
     ExperiencesComponent,
     ProjectsComponent,
     CertificatsComponent,
-    ContactComponent
+    ContactComponent,
   ],
-  imports: [
-    CommonModule
-  ]
+  imports: [CommonModule],
+  exports: [NavBarComponent],
 })
-export class PortfolioModule { }
+export class PortfolioModule {}
