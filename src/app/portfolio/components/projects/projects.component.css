@@ -24,14 +24,4 @@
 }
 .projects .container .project-body .project button {
   width: 100%;
-  height: 40px;
-  font-weight: 600;
-  font-size: 25px;
-  color: var(--main-color);
-  border: 1px solid gray;
-  background-color: white;
-}
-.projects .container .project-body .project button:hover {
-  background-color: var(--main-color);
-  color: white;
 }

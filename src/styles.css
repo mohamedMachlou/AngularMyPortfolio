@@ -3,8 +3,8 @@
 /* Start Variables */
 :root {
   /* --main-color: #2a2c2b; */
-  --main-color: #143bc6;
-  --secondary-color: #345ff8;
+  --main-color: #345ff8;
+  --secondary-color: #143bc6;
   --third-color: #5c7df6;
   --main-color-sp: #f85734;
   --padding-section: 10px;
@@ -71,3 +71,16 @@ html {
   color: var(--main-color-sp);
 }
 /* End header Component */
+button {
+  font-weight: 600;
+  font-size: 25px;
+  background-color: white;
+  color: var(--main-color);
+  border: 1px solid gray;
+  height: 35px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--main-color);
+  color: white;
+}

@@ -1,6 +1,6 @@
 <!-- My Portfolio created by Developer Mohamed Machlou  -->
 
-<div class="navbar">
+<div id="navbar" class="navbar">
   <div class="container">
     <div class="logo">Mohamed<span>Machlou</span></div>
     <div class="nav">
@@ -13,7 +13,9 @@
       <ul>
         <li>
           <a
-            href=""
+            (click)="gotohome()"
+            routerLink="['/home']"
+            routerLinkActive="router-link-active"
             (click)="selected('Home')"
             [ngClass]="{ 'nav-select': myindex() == 'Home' }"
             >Home</a
@@ -21,7 +23,9 @@
         </li>
         <li>
           <a
-            href=""
+            (click)="gotoabout()"
+            routerLink="['/home']"
+            routerLinkActive="router-link-active"
             (click)="selected('About')"
             [ngClass]="{ 'nav-select': myindex() == 'About' }"
             >About</a
@@ -29,7 +33,9 @@
         </li>
         <li>
           <a
-            href=""
+            (click)="gotoexperiences()"
+            routerLink="['/home']"
+            routerLinkActive="router-link-active"
             (click)="selected('Experiences')"
             [ngClass]="{ 'nav-select': myindex() == 'Experiences' }"
             >Experiences</a
@@ -37,7 +43,9 @@
         </li>
         <li>
           <a
-            href=""
+            (click)="gotoprojects()"
+            routerLink="['/home']"
+            routerLinkActive="router-link-active"
             (click)="selected('Projects')"
             [ngClass]="{ 'nav-select': myindex() == 'Projects' }"
             >Projects</a
@@ -45,7 +53,9 @@
         </li>
         <li>
           <a
-            href=""
+            (click)="gotocertificates()"
+            routerLink="['/home']"
+            routerLinkActive="router-link-active"
             (click)="selected('Certificates')"
             [ngClass]="{ 'nav-select': myindex() == 'Certificates' }"
             >Certificates</a
@@ -53,7 +63,9 @@
         </li>
         <li>
           <a
-            href=""
+            (click)="gotocontact()"
+            routerLink="['/home']"
+            routerLinkActive="router-link-active"
             (click)="selected('Contact Me')"
             [ngClass]="{ 'nav-select': myindex() == 'Contact Me' }"
             >Contact Me</a

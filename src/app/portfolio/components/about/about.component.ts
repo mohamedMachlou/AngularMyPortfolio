@@ -5,4 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './about.component.html',
   styleUrl: './about.component.css',
 })
-export class AboutComponent {}
+export class AboutComponent {
+  gotocontact() {
+    document.getElementById('contact')?.scrollIntoView();
+  }
+}

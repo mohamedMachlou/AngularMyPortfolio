@@ -10,8 +10,8 @@ import { Component, signal } from '@angular/core';
 export class NavBarComponent {
   // display les listes
   displayLi = signal<boolean>(false);
-
   myindex = signal<string>('');
+
   selected(index: string) {
     this.myindex.set(index);
     console.log(this.myindex());
@@ -19,5 +19,24 @@ export class NavBarComponent {
   toDisplayLi() {
     this.displayLi.set(!this.displayLi());
     console.log(this.displayLi());
+  }
+
+  gotohome() {
+    document.getElementById('home')?.scrollIntoView();
+  }
+  gotoabout() {
+    document.getElementById('about')?.scrollIntoView();
+  }
+  gotoexperiences() {
+    document.getElementById('experiences')?.scrollIntoView();
+  }
+  gotoprojects() {
+    document.getElementById('projects')?.scrollIntoView();
+  }
+  gotocertificates() {
+    document.getElementById('certificates')?.scrollIntoView();
+  }
+  gotocontact() {
+    document.getElementById('contact')?.scrollIntoView();
   }
 }

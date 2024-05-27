@@ -1,0 +1,17 @@
+/* My Portfolio created by Developer Mohamed Machlou  */
+.footer .container {
+  height: 50px;
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.footer .container .infos h4 {
+  font-weight: 200;
+  font-size: 25px;
+}
+.footer .container .infos span {
+  font-weight: 800;
+  font-size: 25px;
+}

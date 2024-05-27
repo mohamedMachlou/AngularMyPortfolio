@@ -7,6 +7,7 @@ import { ExperiencesComponent } from './components/experiences/experiences.compo
 import { ProjectsComponent } from './components/projects/projects.component';
 import { CertificatsComponent } from './components/certificats/certificats.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ContactComponent } from './components/contact/contact.component';
     ProjectsComponent,
     CertificatsComponent,
     ContactComponent,
+    FooterComponent,
   ],
   imports: [CommonModule],
   exports: [
@@ -27,6 +29,7 @@ import { ContactComponent } from './components/contact/contact.component';
     ProjectsComponent,
     CertificatsComponent,
     ContactComponent,
+    FooterComponent,
   ],
 })
 export class PortfolioModule {}
