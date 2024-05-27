@@ -1,10 +1,15 @@
 /* My Portfolio created by Developer Mohamed Machlou */
+.navbar {
+  position: relative;
+}
 .navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  position: relative;
+  margin-bottom: 40px;
+  position: fixed;
+  background-color: white;
 }
 .navbar .container .logo {
   font-weight: 800;
