@@ -1,1 +1,116 @@
 /* My Portfolio created by Developer Mohamed Machlou */
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  position: relative;
+}
+.navbar .container .logo {
+  font-weight: 800;
+  font-size: 30px;
+}
+.navbar .container .logo span {
+  color: var(--secondary-color);
+}
+.navbar .container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  list-style: none;
+  width: 100%;
+}
+.navbar .container li a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  width: fit-content;
+  padding: 7px 8px;
+  font-weight: 800;
+  font-size: 17px;
+  color: black;
+  cursor: pointer;
+}
+.nav-select {
+  color: #ffffff !important;
+  background-color: var(--secondary-color);
+}
+.navbar .container ul li:not(:last-child):hover a {
+  background-color: var(--third-color);
+  color: #ffffff;
+}
+.navbar .container li:last-child a {
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.navbar .container li:last-child:hover a {
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+}
+
+@media (max-width: 1199px) {
+  .navbar .container .nav .menu {
+    background-color: white;
+    border: 1px solid blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 40px;
+    padding: 5px 5px 0px;
+  }
+  .navbar .container .nav .menu span {
+    height: 2px;
+    width: 100%;
+    background-color: blue;
+    margin-bottom: 4px;
+  }
+  .navbar .container .nav .menu span:nth-child(2) {
+    width: 60%;
+    transition: 0.3s;
+  }
+  .navbar .container .nav .menu span:nth-child(3) {
+    width: 75%;
+    transition: 0.3s;
+  }
+  .navbar .container .nav .menu:hover span {
+    height: 2px;
+    width: 100%;
+    background-color: blue;
+    margin-bottom: 4px;
+  }
+  .navbar .container .nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: yellowgreen;
+  }
+  .navbar .container .nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 617px;
+    top: 50px;
+  }
+
+  .navbar .container .nav ul li {
+    border: 0.5px solid var(--secondary-color);
+    margin-bottom: 2px;
+    width: 300px;
+    z-index: 8;
+    background-color: white;
+  }
+  .navbar .container .nav ul li a {
+    width: 100%;
+  }
+}
+@media (max-width: 1040px) {
+  .navbar .container .nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 395px;
+    top: 50px;
+  }
+}

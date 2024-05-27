@@ -19,6 +19,14 @@ import { ContactComponent } from './components/contact/contact.component';
     ContactComponent,
   ],
   imports: [CommonModule],
-  exports: [NavBarComponent],
+  exports: [
+    NavBarComponent,
+    WelcomeComponent,
+    AboutComponent,
+    ExperiencesComponent,
+    ProjectsComponent,
+    CertificatsComponent,
+    ContactComponent,
+  ],
 })
 export class PortfolioModule {}

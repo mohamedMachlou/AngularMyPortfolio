@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
-  selector: 'app-projects',
+  selector: 'projects',
   templateUrl: './projects.component.html',
-  styleUrl: './projects.component.css'
+  styleUrl: './projects.component.css',
 })
 export class ProjectsComponent {
-
+  title = signal<string>('<code/>');
 }

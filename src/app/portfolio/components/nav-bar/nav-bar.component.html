@@ -3,14 +3,62 @@
 <div class="navbar">
   <div class="container">
     <div class="logo">Mohamed<span>Machlou</span></div>
-    <div class="nav-list">
+    <div class="nav">
+      <span class="menu" (click)="toDisplayLi()">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Experiences</li>
-        <li>Projects</li>
-        <li>Certificates</li>
-        <li>Contact Me</li>
+        <li>
+          <a
+            href=""
+            (click)="selected('Home')"
+            [ngClass]="{ 'nav-select': myindex() == 'Home' }"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            (click)="selected('About')"
+            [ngClass]="{ 'nav-select': myindex() == 'About' }"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            (click)="selected('Experiences')"
+            [ngClass]="{ 'nav-select': myindex() == 'Experiences' }"
+            >Experiences</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            (click)="selected('Projects')"
+            [ngClass]="{ 'nav-select': myindex() == 'Projects' }"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            (click)="selected('Certificates')"
+            [ngClass]="{ 'nav-select': myindex() == 'Certificates' }"
+            >Certificates</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            (click)="selected('Contact Me')"
+            [ngClass]="{ 'nav-select': myindex() == 'Contact Me' }"
+            >Contact Me</a
+          >
+        </li>
       </ul>
     </div>
   </div>
