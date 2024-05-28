@@ -10,7 +10,8 @@
         <span></span>
         <span></span>
       </span>
-      <ul>
+      <!-- Start Large Screen  -->
+      <ul class="large">
         <li>
           <a
             (click)="gotohome()"
@@ -72,6 +73,71 @@
           >
         </li>
       </ul>
+      <!-- End Large Screen  -->
+      <!-- Start Small Screen  -->
+      <ul class="small">
+        <li [ngStyle]="displayLi() ? { display: 'flex' } : { display: 'none' }">
+          <a
+            (click)="gotohome()"
+            routerLink="['/home']"
+            routerLinkActive="router-link-active"
+            (click)="selected('Home')"
+            [ngClass]="{ 'nav-select': myindex() == 'Home' }"
+            >Home</a
+          >
+        </li>
+        <li [ngStyle]="displayLi() ? { display: 'flex' } : { display: 'none' }">
+          <a
+            (click)="gotoabout()"
+            routerLink="['/home']"
+            routerLinkActive="router-link-active"
+            (click)="selected('About')"
+            [ngClass]="{ 'nav-select': myindex() == 'About' }"
+            >About</a
+          >
+        </li>
+        <li [ngStyle]="displayLi() ? { display: 'flex' } : { display: 'none' }">
+          <a
+            (click)="gotoexperiences()"
+            routerLink="['/home']"
+            routerLinkActive="router-link-active"
+            (click)="selected('Experiences')"
+            [ngClass]="{ 'nav-select': myindex() == 'Experiences' }"
+            >Experiences</a
+          >
+        </li>
+        <li [ngStyle]="displayLi() ? { display: 'flex' } : { display: 'none' }">
+          <a
+            (click)="gotoprojects()"
+            routerLink="['/home']"
+            routerLinkActive="router-link-active"
+            (click)="selected('Projects')"
+            [ngClass]="{ 'nav-select': myindex() == 'Projects' }"
+            >Projects</a
+          >
+        </li>
+        <li [ngStyle]="displayLi() ? { display: 'flex' } : { display: 'none' }">
+          <a
+            (click)="gotocertificates()"
+            routerLink="['/home']"
+            routerLinkActive="router-link-active"
+            (click)="selected('Certificates')"
+            [ngClass]="{ 'nav-select': myindex() == 'Certificates' }"
+            >Certificates</a
+          >
+        </li>
+        <li [ngStyle]="displayLi() ? { display: 'flex' } : { display: 'none' }">
+          <a
+            (click)="gotocontact()"
+            routerLink="['/home']"
+            routerLinkActive="router-link-active"
+            (click)="selected('Contact Me')"
+            [ngClass]="{ 'nav-select': myindex() == 'Contact Me' }"
+            >Contact Me</a
+          >
+        </li>
+      </ul>
+      <!-- End Small Screen  -->
     </div>
   </div>
 </div>
