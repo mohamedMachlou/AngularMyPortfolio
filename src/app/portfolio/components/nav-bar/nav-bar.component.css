@@ -6,7 +6,7 @@
   align-items: center;
   height: 80px;
   margin-bottom: 40px;
-  background-color: rgb(250, 158, 46);
+  background-color: rgb(255, 255, 255);
   border-bottom: 1px solid gray;
   z-index: 6;
   position: relative;
@@ -102,7 +102,6 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-color: yellowgreen;
   }
   /* Hide Large List */
   .navbar .container .large {
@@ -155,7 +154,7 @@
   }
 }
 /* Small devices (landscape phones, 576px and 767px) */
-@media (min-width: 576px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .navbar .container .nav .small {
     left: 200px;
     top: 50px;
@@ -170,5 +169,16 @@
   .navbar .container .logo {
     font-weight: 800;
     font-size: 20px;
+  }
+}
+/* Small devices (landscape phones, 592px and down) */
+@media (max-width: 592px) {
+  .navbar .container .nav {
+    width: 100%;
+  }
+  .navbar .container .nav .small {
+    left: 50px;
+    top: 60px;
+    width: 100%;
   }
 }

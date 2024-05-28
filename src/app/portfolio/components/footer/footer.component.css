@@ -1,4 +1,7 @@
 /* My Portfolio created by Developer Mohamed Machlou  */
+.footer {
+  border-top: 1px solid rgb(165, 164, 164);
+}
 .footer .container {
   height: 50px;
   width: 100%;
@@ -14,4 +17,15 @@
 .footer .container .infos span {
   font-weight: 800;
   font-size: 25px;
+}
+/* Large devices (desktops, 768px to down) */
+@media (max-width: 768px) {
+  .footer .container .infos h4 {
+    font-weight: 200;
+    font-size: 15px;
+  }
+  .footer .container .infos span {
+    font-weight: 800;
+    font-size: 15px;
+  }
 }
