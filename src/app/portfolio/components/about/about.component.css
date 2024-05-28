@@ -13,5 +13,36 @@
   font-size: 20px;
 }
 .about .container button {
-  width: 170px;
+  width: 140px;
+}
+/* Large devices (desktops, 768px to down) */
+@media (max-width: 768px) {
+  .about .container .about-content h4 {
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .about .container .about-content span {
+    font-size: 15px;
+  }
+  .about .container button {
+    width: 80px;
+    height: 25px;
+    font-size: 15px;
+  }
+}
+
+/* Large devices (desktops, 567px to down) */
+@media (max-width: 567px) {
+  .about .container .about-content h4 {
+    font-size: 12px;
+    line-height: 30px;
+  }
+  .about .container .about-content span {
+    font-size: 12px;
+  }
+  .about .container button {
+    width: 70px;
+    height: 25px;
+    font-size: 14px;
+  }
 }
