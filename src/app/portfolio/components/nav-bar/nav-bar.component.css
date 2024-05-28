@@ -9,9 +9,12 @@
   height: 80px;
   margin-bottom: 40px;
   top: 0px;
+  left: 92px;
+
   position: fixed;
   background-color: rgb(255, 255, 255);
   border-bottom: 1px solid gray;
+  z-index: 6;
 }
 .navbar .container .logo {
   font-weight: 800;
@@ -23,17 +26,21 @@
 .navbar .container ul {
   list-style: none;
 }
-/* Large List */
+/*Start  Large List */
+/* Show Large List */
 .navbar .container .large {
   display: flex;
   flex-direction: row;
   justify-content: end;
   width: 100%;
 }
-/* Small List */
+/*End  Large List */
+/*Start Small List */
+/* Hide Small List */
 .navbar .container .small {
   display: none;
 }
+/*End Small List */
 .navbar .container li a {
   display: block;
   text-decoration: none;
@@ -64,6 +71,7 @@
   color: var(--main-color);
 }
 
+/* Large and Small devices (desktops, 1199px and down) */
 @media (max-width: 1199px) {
   .navbar .container .nav .menu {
     background-color: white;
@@ -71,9 +79,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    width: 40px;
     padding: 5px 5px 0px;
     position: relative;
+    width: 40px;
   }
   .navbar .container .nav .menu span {
     height: 2px;
@@ -101,6 +109,7 @@
     justify-content: flex-end;
     background-color: yellowgreen;
   }
+  /* Hide Large List */
   .navbar .container .large {
     display: none;
   }
@@ -108,27 +117,63 @@
     display: flex;
     flex-direction: column;
     position: absolute;
+  }
+  .navbar .container .nav .small li {
+    border: 0.5px solid var(--secondary-color);
+    margin-bottom: 2px;
+    z-index: 8;
+    background-color: white;
+  }
+}
+
+/* Large devices (desktops, 992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar .container .nav .small {
     left: 617px;
     top: 50px;
   }
 
   .navbar .container .nav .small li {
-    border: 0.5px solid var(--secondary-color);
-    margin-bottom: 2px;
     width: 300px;
-    z-index: 8;
-    background-color: white;
   }
   .navbar .container .nav .small li a {
     width: 100%;
   }
 }
-@media (max-width: 1040px) {
+
+/* Medium devices (tablets, 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
   .navbar .container .nav .small {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 620px;
+    left: 400px;
     top: 50px;
+  }
+
+  .navbar .container .nav .small li {
+    width: 300px;
+  }
+  .navbar .container .nav .small li a {
+    width: 100%;
+  }
+  .navbar .container .logo {
+    font-weight: 800;
+    font-size: 25px;
+  }
+}
+/* Small devices (landscape phones, 576px and 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .navbar .container .nav .small {
+    left: 200px;
+    top: 50px;
+  }
+
+  .navbar .container .nav .small li {
+    width: 300px;
+  }
+  .navbar .container .nav .small li a {
+    width: 100%;
+  }
+  .navbar .container .logo {
+    font-weight: 800;
+    font-size: 20px;
   }
 }

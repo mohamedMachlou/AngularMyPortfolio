@@ -23,20 +23,26 @@ export class NavBarComponent {
 
   gotohome() {
     document.getElementById('home')?.scrollIntoView();
+    this.displayLi.set(!this.displayLi());
   }
   gotoabout() {
     document.getElementById('about')?.scrollIntoView();
+    this.displayLi.set(!this.displayLi());
   }
   gotoexperiences() {
     document.getElementById('experiences')?.scrollIntoView();
+    this.displayLi.set(!this.displayLi());
   }
   gotoprojects() {
     document.getElementById('projects')?.scrollIntoView();
+    this.displayLi.set(!this.displayLi());
   }
   gotocertificates() {
     document.getElementById('certificates')?.scrollIntoView();
+    this.displayLi.set(!this.displayLi());
   }
   gotocontact() {
     document.getElementById('contact')?.scrollIntoView();
+    this.displayLi.set(!this.displayLi());
   }
 }

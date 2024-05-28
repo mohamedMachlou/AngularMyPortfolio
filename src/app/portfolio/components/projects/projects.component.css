@@ -18,9 +18,11 @@
   display: block;
   margin-bottom: 5px;
   transition: 0.3s;
+  z-index: 1;
 }
 .projects .container .project-body .project img:hover {
   transform: rotate(1deg);
+  z-index: 1;
 }
 .projects .container .project-body .project button {
   width: 100%;
