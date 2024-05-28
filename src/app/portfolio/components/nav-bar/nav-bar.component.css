@@ -71,7 +71,7 @@
   color: var(--main-color);
 }
 
-/* Large and Small devices (desktops, 1199px and down) */
+/* Global Large and Small devices (desktops, 1199px and down) */
 @media (max-width: 1199px) {
   .navbar .container .nav .menu {
     background-color: white;
