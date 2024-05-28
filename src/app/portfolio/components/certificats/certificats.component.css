@@ -7,6 +7,7 @@
 }
 .certificates .container .certificates-block .certificate {
   width: 25%;
+  margin: 20px 0px;
 }
 .certificates .container .certificates-block .certificate img {
   width: 100%;
@@ -20,4 +21,23 @@
 .certificates .container .certificates-block .certificate button {
   z-index: 3;
   width: 100%;
+}
+/* Large devices (desktops, 992px to down) */
+@media (max-width: 992px) {
+  .certificates .container .certificates-block .certificate button {
+    font-size: 16px;
+    height: 25px;
+  }
+}
+/* Large devices (desktops, 768px to down) */
+@media (max-width: 768px) {
+  .certificates .container .certificates-block .certificate {
+    width: 45%;
+  }
+}
+/* Large devices (desktops, 567px to down) */
+@media (max-width: 567px) {
+  .certificates .container .certificates-block .certificate {
+    width: 80%;
+  }
 }
