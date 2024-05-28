@@ -5,6 +5,7 @@
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
+  background-color: aquamarine;
 }
 .projects .container .project-body .project {
   width: 45%;
@@ -26,4 +27,14 @@
 }
 .projects .container .project-body .project button {
   width: 100%;
+}
+/* Large devices (desktops, 768px to down) */
+@media (max-width: 768px) {
+  .projects .container .project-body {
+    flex-direction: column;
+  }
+  .projects .container .project-body .project {
+    width: 85%;
+    margin-bottom: 30px;
+  }
 }

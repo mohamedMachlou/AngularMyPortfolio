@@ -1,20 +1,24 @@
 /* My Portfolio created by Developer Mohamed Machlou */
-.experiences .container .slider .title {
+
+.experiences .container .sliders {
+  width: 100%;
+}
+.experiences .container .sliders .slider .title {
   width: 60%;
   display: flex;
   justify-content: space-between;
 }
-.experiences .container .slider .title h2 {
+.experiences .container .sliders .slider .title h2 {
   font-weight: 600;
   font-size: 15px;
 }
-.experiences .container .slider .slider-body {
+.experiences .container .sliders .slider .slider-body {
   width: 60%;
   height: 8px;
   background-color: #ffffff;
   border: 1px solid gray;
 }
-.experiences .container .slider .slider-body .under {
+.experiences .container .sliders .slider .slider-body .under {
   width: 80%;
   height: 6px;
   background-color: var(--secondary-color);
